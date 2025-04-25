@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: putinzov-casino-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python casino_bot.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
